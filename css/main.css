@@ -1,79 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
-  * {
-    margin: 0;
-    font-weight: 800;
-    font-family: Karla;
-  }
-  *:focus {
-    outline: none;
-  }
-  *.hide {
-    display: none !important;
-  }
-  
-  body {
-    background: #f4fcff;
-    color: #0d2f72;
-    font-family: Karla;
-    overflow: auto;
-  }
-  
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h1 {
-    align-items: center;
-    font-size: 64px;
-    font-family: Space Grotesk;
-    overflow: hidden;
-    
-  }
-  p {
-    font-weight: normal;
-    font-size: 18px;
-    font-family: Space Grotesk;
-  }
-  
-  #promovid {
-    color: black;
-    font-size: 50px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-  }
-
-.top-box {
-  display: flex;
-  flex-direction: row;
+ * {
+     margin: 0;
+     font-weight: 800;
+     font-family: Karla;
 }
-
-.top-box .left {
-  flex: 1;
-  padding: 10px;
+ *:focus {
+     outline: none;
 }
-
-.top-box .right {
-  flex: 1;
-  padding: 10px;
+ *.hide {
+     display: none !important;
 }
-
-.bottom-box {
-  display: flex;
-  flex-direction: row-reverse;
+ body {
+     background: #f4fcff;
+     color: #0d2f72;
+     font-family: Karla;
+     overflow: auto;
+     flex-direction: column;
+     text-align: center;
 }
-
-.bottom-box .left {
-  flex: 1;
-  padding: 10px;
+ div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
-
-.bottom-box .right {
-  flex: 1;
-  padding: 10px;
+ h1 {
+     align-items: center;
+     font-size: 64px;
+     font-family: Space Grotesk;
+     overflow: hidden;
 }
-
-
-
-
+ p {
+     font-weight: normal;
+     font-size: 18px;
+     font-family: Space Grotesk;
+}
+ #promovid {
+     color: black;
+     font-size: 50px;
+     margin-bottom: 30px;
+     margin-top: 20px;
+}
+ .top-box {
+     display: flex;
+     flex-direction: row;
+}
+ .top-box .left {
+     flex: 1;
+     padding: 10px;
+}
+ .top-box .right {
+     flex: 1;
+     padding: 10px;
+}
+ .bottom-box {
+     display: flex;
+     flex-direction: row-reverse;
+}
+ .bottom-box .left {
+     flex: 1;
+     padding: 10px;
+}
+ .bottom-box .right {
+     flex: 1;
+     padding: 10px;
+}
+ 
