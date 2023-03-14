@@ -10,6 +10,16 @@
  *.hide {
      display: none !important;
 }
+.hero1 {
+     width: 85%;
+     height: 85%;
+}
+
+.hero2 {
+     width: 85%;
+     height: 85%;
+}
+
  body {
      background-color:#b9d252;;
      color: #0d2f72;
