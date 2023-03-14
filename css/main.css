@@ -33,6 +33,7 @@
      font-weight: normal;
      font-size: 18px;
      font-family: Space Grotesk;
+     text-align: center;
 }
  #promovid {
      color: black;
@@ -65,3 +66,9 @@
      padding: 10px;
 }
  
+#demo {
+     font-size: 50px;
+     font-family: Space Grotesk;
+     margin-bottom: 30px;
+     margin-top: 20px;
+}
