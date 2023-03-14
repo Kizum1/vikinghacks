@@ -7,6 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css\main.css" />
     <link rel="stylesheet" type="text/css" href="css\organizercard.css" />
+    <script>
+    var countDownDate = new Date("Apr 28, 2023 08:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+      
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+      
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+      
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      </script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   </head>
   <body>
@@ -21,6 +50,7 @@
       </p> 
       <p>This year, we are hosting our 2nd in-person hackathon. We are excited to see what you will create!
       </p>
+      <p id="demo"></p>
       <div class="top-box">
         <div class="left">
           <h2>What is Viking Hacks
@@ -53,54 +83,83 @@
         <div class="card">
           <p> Afraz Ahmed
           </p>
-          <img src="pictures\cat1.png";  width="100" height="100">
-          <p>hi</p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>DSC Lead</p>
+        </div>
+        <div class="card">
+          <p> Johnathan Saleh
+          </p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>President</p>
         </div>
         <div class="card">
           <p> Christina Mullen
           </p>
-          <img src="pictures\cat1.png";  width="100" height="100">
-          <p>hi</p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>Event Lead Coordinator</p>
         </div>
         <div class="card">
           <p> Jay Chong
           </p>
-          <img src="pictures\cat1.png";  width="100" height="100">
-          <p>hi</p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>Lead Engineer</p>
         </div>
-        <div class="card">
-          <p> Jay Chong
-          </p>
-          <img src="pictures\cat1.png";  width="100" height="100">
-          <p>hi</p>
-        </div>
+        
       </div>
       <div class="container"; style="flex-direction: row;">
         <div class="card">
-          <p> Afraz Ahmed
+          <p> Thomas Yeoh
           </p>
-          <img src="pictures\cat1.png";  width="100" height="100">
-          <p>hi</p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>Sponsership guy</p>
         </div>
         <div class="card">
-          <p> Afraz Ahmed
+          <p> Kojiro Tsugaru
           </p>
-          <img src="pictures\cat1.png";  width="100" height="100">
-          <p>hi</p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>Lead Creative Designer</p>
         </div>
         <div class="card">
-          <p> Afraz Ahmed
+          <p> Richard Azucenas
           </p>
-          <img src="pictures\cat1.png";  width="100" height="100">
-          <p>hi</p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>Creative Designer</p>
         </div>
         <div class="card">
-          <p> Afraz Ahmed
+          <p> Konstantin Victoria 
           </p>
-          <img src="pictures\cat1.png";  width="100" height="100">
-          <p>hi</p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>Judge</p>
+        </div>
+        
+      </div>
+      <div class="container"; style="flex-direction: row;">
+        <div class="card">
+          <p> Rohan Chhaya
+          </p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>Event Coordinator</p>
+        </div>
+        <div class="card">
+          <p> Bryan Valerianlie
+          </p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>Event Coordinator</p>
+        </div>
+        <div class="card">
+          <p> Ruaa Abushareefh
+          </p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>Event Coordinator</p>
+        </div>
+        <div class="card">
+          <p> Lucero Hernandez
+          </p>
+          <img src="pictures\cat1.png";  width="300" height="300">
+          <p>Event Coordinator</p>
         </div>
       </div>
     </div>
+    
   </body>
 </html>
