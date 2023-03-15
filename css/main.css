@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
- * {
+:root{
+     --ff-body: 'Karla', regular;
+     --ff-space: 'Space Grotesk';
+     --color-green: #b9d252;
+     --color-blue: #0d2f72;
+     --max-width: 960px;
+}
+
+* {
      margin: 0;
      font-weight: 800;
-     font-family: Karla;
+     font-family: var(--ff-body);
+     box-sizing: border-box;
 }
  *:focus {
      outline: none;
@@ -10,13 +19,29 @@
  *.hide {
      display: none !important;
 }
+.hero1 {
+     width: 85%;
+     height: 85%;
+}
+
+.hero2 {
+     width: 85%;
+     height: 85%;
+}
+.heroVid {
+     width: 375px;
+     height: 300px;
+     border-radius: 3%;
+}
+
  body {
-     background: #f4fcff;
-     color: #0d2f72;
-     font-family: Karla;
+     background-color:var(--color-green);
+     color: var(--color-blue);
+     font-family: var(--ff-body);
      overflow: auto;
      flex-direction: column;
      text-align: center;
+     max-width: var(--max-width)
 }
  div {
      display: flex;
@@ -26,13 +51,13 @@
  h1 {
      align-items: center;
      font-size: 64px;
-     font-family: Space Grotesk;
+     font-family: var(--ff-space);
      overflow: hidden;
 }
  p {
      font-weight: normal;
      font-size: 18px;
-     font-family: Space Grotesk;
+     font-family: var(--ff-space);
      text-align: center;
 }
  #promovid {
@@ -65,10 +90,25 @@
      flex: 1;
      padding: 10px;
 }
+/************************ Organizers Cards ***************************/
+.container {
+     margin: auto;
+     display: flex; 
+     flex-direction: row;
+}
+.card{
+     width: 28%;
+     height: 28%;
+}
+img {
+     width: 300px;
+     height: 300px
+}
+
  
 #demo {
      font-size: 50px;
-     font-family: Space Grotesk;
+     font-family: var(--ff-space);
      margin-bottom: 30px;
      margin-top: 20px;
 }
