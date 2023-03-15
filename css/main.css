@@ -4,6 +4,7 @@
      --ff-space: 'Space Grotesk';
      --color-green: #b9d252;
      --color-blue: #0d2f72;
+     --max-width: 960px;
 }
 
 * {
@@ -40,6 +41,7 @@
      overflow: auto;
      flex-direction: column;
      text-align: center;
+     max-width: var(--max-width)
 }
  div {
      display: flex;
@@ -88,6 +90,21 @@
      flex: 1;
      padding: 10px;
 }
+/************************ Organizers Cards ***************************/
+.container {
+     margin: auto;
+     display: flex; 
+     flex-direction: row;
+}
+.card{
+     width: 28%;
+     height: 28%;
+}
+img {
+     width: 300px;
+     height: 300px
+}
+
  
 #demo {
      font-size: 50px;
