@@ -10,14 +10,24 @@
   <link rel="stylesheet" type="text/css" href="css\organizercard.css" />
   <script src="js\index.js">
   </script>
-  <!-- What dis link do -->
+  <!-- Lets move this fonts link to css -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 
 <body>
-  <div>
-    <p>April 28th - 30th @ Diablo Valley College
-    </p>
+  <p>April 28th - 30th @ Diablo Valley College</p>
+  <header class="navStick">
+   
+    <nav>
+    <a class="active" href="index.html">Home</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="faq.html">FAQ</a>
+    <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+
     <h1>Viking Hacks is back
     </h1>
     <p>VikingHacks is a 2 day event hosted by Google Developers Student Club at Diablo Valley College.
@@ -27,6 +37,14 @@
     <p>This year, we are hosting our 2nd in-person hackathon. We are excited to see what you will create!
     </p>
     <p id="demo"></p>
+  </div>
+
+  <div class="video">
+    <iframe class="heroVid" src="https://www.youtube.com/embed/tgbNymZ7vqY" autoplay="allow"></iframe>
+  </div>
+
+  <div class="textPics">
+    <h2 id="promovid">Spring 2023 Promo</h2>
     <div class="top-box">
       <div class="left">
         <h2>What is Viking Hacks</h2>
@@ -34,21 +52,22 @@
       </div>
       <div class="right">
         <!--  What should these images be -->
-        <img class="hero1" src="imgs\cat1.png">
+        <img class="hero1" src="imgs\VH_Prof1.png">
       </div>
     </div>
     <div class="top-box">
       <div class="left">
-        <img class="hero2" src="imgs\cat2.png">
+        <img class="hero2" src="imgs\VH_HeroGirls1.png">
       </div>
       <div class="right">
-        <h2>The Event
-        </h2>
+        <h2>The Event</h2>
         <p>people food coding</p>
       </div>
     </div>
-    <h2 id="promovid">Spring 2023 Promo</h2>
-    <iframe class="heroVid" src="https://www.youtube.com/embed/tgbNymZ7vqY" autoplay="allow"></iframe>
+  </div><!--textPics-->
+  
+
+  <!--
     <h1> Viking Hacks Organizers </h1>
     
     <div class="container">
@@ -117,6 +136,7 @@
         <p>Event Coordinator</p>
       </div>
     </div>
+    -->
   </div>
 
   <div class="spons-header">Sponsors</div>
