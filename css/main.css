@@ -59,11 +59,25 @@ header{
 }
 .navStick nav{
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
-     background-color: rgba(0, 0, 0, 0.5);
+     background-color: rgba(0, 0, 0, 0.0);
      padding: 1rem 0;
      width: 100%; 
+}
+
+.navStick a {
+     color: white;
+     text-decoration: none;
+     transition: color 0.25s;
+}
+
+.navStick a:hover{
+     color: var(--color-green);
+}
+
+.hero {
+     padding: 3%;
 }
 
 .hero1 {
