@@ -235,13 +235,13 @@
 }
  .spons .large-size {
      height: 120px;
-     width: calc(100% - 10px) 
+     width: 90%
 }
  .spons .medium-size {
      height: 120px;
-     width: calc(33.33% - 13.33px) 
+     width: 23.33%
 }
  .spons .small-size {
      height: 120px;
-     width: calc(16.66% - 16.66px) 
+     width: 13.66%
 }
