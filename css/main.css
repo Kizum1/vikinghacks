@@ -60,6 +60,14 @@
      font-family: var(--ff-space);
      text-align: center;
 }
+
+ footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2%;
+ }
 /***************************** Navagation Bar CSS **************************/
  .navStick {
      position: sticky;
