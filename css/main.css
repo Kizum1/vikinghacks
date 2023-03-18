@@ -6,12 +6,7 @@
      --color-blue: #0d2f72;
      --color-secondary: #EDF1E4;
 }
- * {
-     margin: 0;
-     font-weight: 800;
-     font-family: var(--ff-body);
-     box-sizing: border-box;
-}
+
  *:focus {
      outline: none;
 }
@@ -50,6 +45,7 @@
      font-size: 64px;
      font-family: var(--ff-space);
      overflow: hidden;
+     
 }
  p {
      font-weight: normal;
@@ -206,7 +202,7 @@
      display: -moz-flex;
      display: -webkit-flex;
      flex-wrap: wrap;
-     gap: 20px;
+     gap: 60px;
      justify-content: center;
      list-style: none;
      padding: 0 
