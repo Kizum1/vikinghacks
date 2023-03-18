@@ -25,9 +25,6 @@
      height: 100%;
      background: url('/imgs/headerTile.png');
      background-repeat: repeat-x;
-     /*background-size: cover;
-     background-position: center center;
-     background-attachment: fixed;*/
      text-align: center;
      background-color:var(--color-secondary);
      color: var(--color-blue);
