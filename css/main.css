@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
-:root{
+ :root{
      --ff-body: 'Karla', regular;
      --ff-space: 'Space Grotesk';
      --color-green: #b9d252;
      --color-blue: #0d2f72;
      --color-secondary: #EDF1E4;
 }
-
-* {
+ * {
      margin: 0;
      font-weight: 800;
      font-family: var(--ff-body);
@@ -19,7 +18,7 @@
  *.hide {
      display: none !important;
 }
-body {
+ body {
      margin: 0;
      padding: 0;
      width: 100%;
@@ -35,68 +34,20 @@ body {
      font-family: var(--ff-body);
      overflow: auto;
      flex-direction: column;
+     display: flex;
 }
-div {
+ div {
      display: flex;
      flex-direction: column;
      align-items: center;
-     text-align: center;
 }
-
-header{
+ header{
      display: flex;
      justify-content: center;
      align-items: center;
      width: 100%;
      padding: 2%;
-     
 }
-
-.navStick {
-     position: sticky;
-     top: 0;
-     z-index: 100;
-}
-.navStick nav{
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     background-color: rgba(0, 0, 0, 0.0);
-     padding: 1rem 0;
-     width: 100%; 
-}
-
-.navStick a {
-     color: white;
-     text-decoration: none;
-     transition: color 0.25s;
-}
-
-.navStick a:hover{
-     color: var(--color-green);
-}
-
-.hero {
-     padding: 3%;
-}
-
-.hero1 {
-     width: 85%;
-     height: 85%;
-}
-
-.hero2 {
-     width: 85%;
-     height: 85%;
-}
-
-.heroVid {
-     width: 375px;
-     height: 300px;
-     border-radius: 3%;
-}
-
-
  h1 {
      align-items: center;
      font-size: 64px;
@@ -109,12 +60,51 @@ header{
      font-family: var(--ff-space);
      text-align: center;
 }
- #promovid {
-     color: black;
+/***************************** Navagation Bar CSS **************************/
+ .navStick {
+     position: sticky;
+     top: 0;
+     z-index: 100;
+}
+ .navStick nav{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: rgba(0, 0, 0, 0.0);
+     padding: 1rem 0;
+     width: 100%;
+}
+ .navStick a {
+     color: white;
+     text-decoration: none;
+     transition: color 0.25s;
+}
+ .navStick a:hover{
+     color: var(--color-green);
+}
+ .hero {
+     padding: 3%;
+}
+ .hero1 {
+     width: 85%;
+     height: 85%;
+}
+ .hero2 {
+     width: 85%;
+     height: 85%;
+}
+ .heroVid {
+     width: 375px;
+     height: 300px;
+     border-radius: 3%;
+}
+ #demo {
      font-size: 50px;
+     font-family: var(--ff-space);
      margin-bottom: 30px;
      margin-top: 20px;
 }
+/********************* About Section CSS ************************/
  .top-box {
      display: flex;
      flex-direction: row;
@@ -140,28 +130,99 @@ header{
      padding: 10px;
 }
 /************************ Organizers Cards ***************************/
-.container {
+ .container {
      margin: auto;
-     display: flex; 
+     display: flex;
      flex-direction: row;
 }
-.card{
+ .card{
      width: 28%;
      height: 28%;
 }
-img {
+ img {
      width: 300px;
-     height: 300px
+     height: 300px 
 }
-
- 
-#demo {
-     font-size: 50px;
-     font-family: var(--ff-space);
-     margin-bottom: 30px;
-     margin-top: 20px;
+ .card {
+     padding: 20px;
+     margin: 10px;
+     background: #DBBDBD;
+     width: 300px;
+     height: 300px;
+     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+     border-radius: 3px;
+     transition: .2s all;
+     cursor: pointer;
 }
-.gdscLogo {
-     width: 40%;
-     height: 40%;
+ .container:hover .card {
+     filter: blur(3px);
+     opacity: .5;
+     transform: scale(.98);
+     box-shadow: none;
+}
+ .container:hover .card:hover {
+     transform: scale(1);
+     filter: blur(0px);
+     opacity: 1;
+     box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+     background: #A82C2C;
+     color: white;
+}
+/********************* Sponsership CSS ************************/
+ .spons {
+     display: flex;
+     flex-direction: column;
+     gap: 32px;
+     margin: 0 140px 144px;
+     position: relative;
+     z-index: 1 
+}
+ .spons img {
+     max-height: 100%;
+     max-width: 100%;
+     object-fit: contain 
+}
+ .spons .spons-header {
+     color: #09426b;
+     font-family: PP Pangram Sans Rounded Bold;
+     font-size: 2rem;
+     font-weight: 400;
+     text-align: left;
+     white-space: nowrap;
+     width: 100% 
+}
+ .spons .logo-container {
+     -ms-box-orient: horizontal;
+     align-items: center;
+     display: flex;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -moz-flex;
+     display: -webkit-flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: center;
+     list-style: none;
+     padding: 0 
+}
+ .spons .spons-item {
+     display: flex;
+     font-size: 2em;
+     font-weight: 700;
+     justify-content: center;
+     line-height: 100px;
+     text-align: center 
+}
+ .spons .large-size {
+     height: 120px;
+     width: calc(100% - 10px) 
+}
+ .spons .medium-size {
+     height: 120px;
+     width: calc(33.33% - 13.33px) 
+}
+ .spons .small-size {
+     height: 120px;
+     width: calc(16.66% - 16.66px) 
 }
