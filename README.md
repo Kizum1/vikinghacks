@@ -4,5 +4,4 @@ This is the official website of the Google Developers Club at Diablo Valley Coll
 
 # Project Developers
 
-Lead Developer: Jay Chong
-Developer: Christina Mullen
+Lead Developers: Jay Chong, Christina Mullen
