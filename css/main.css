@@ -49,7 +49,7 @@
 }
  p {
      font-weight: normal;
-     font-size: 15px;
+     font-size: 20px;
      font-family: var(--ff-space);
      text-align: center;
 }
@@ -89,15 +89,17 @@
  .hero1 {
      width: 85%;
      height: 85%;
+     margin-top: 20px;
 }
  .hero2 {
      width: 85%;
      height: 85%;
+     margin-top: 20px;
 }
  .heroVid {
-     width: 375px;
+     width: 600px;
      height: 300px;
-     border-radius: 3%;
+     border-radius: 5%;
 }
  #demo {
      font-size: 50px;
@@ -141,21 +143,21 @@
      height: 28%;
 }
  img {
-     width: 300px;
-     height: 300px 
+     width: 100%;
+     height: 100%; 
 }
  .card {
      padding: 20px;
      margin: 10px;
-     background: #DBBDBD;
-     width: 300px;
-     height: 300px;
+     background: #4ed283;
+     width: 100%;
+     height: 100%;
      box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
      border-radius: 3px;
      transition: .2s all;
      cursor: pointer;
 }
- .container:hover .card {
+ /* .container:hover .card {
      filter: blur(3px);
      opacity: .5;
      transform: scale(.98);
@@ -168,31 +170,31 @@
      box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
      background: #A82C2C;
      color: white;
-}
+} */
 /********************* Sponsership CSS ************************/
  .spons {
      display: flex;
      flex-direction: column;
-     gap: 32px;
+     gap: 30px;
      margin: 0 140px 144px;
      position: relative;
-     z-index: 1 
+     z-index: 1; 
 }
  .spons img {
      max-height: 100%;
      max-width: 100%;
      object-fit: contain 
 }
- .spons .spons-header {
+ .spons-header {
      color: #09426b;
      font-family: PP Pangram Sans Rounded Bold;
-     font-size: 2rem;
+     font-size: 90px;
      font-weight: 400;
      text-align: left;
      white-space: nowrap;
-     width: 100% 
+     margin: 50px; 
 }
- .spons .logo-container {
+ .logo-container {
      -ms-box-orient: horizontal;
      align-items: center;
      display: flex;
@@ -205,9 +207,9 @@
      gap: 60px;
      justify-content: center;
      list-style: none;
-     padding: 0 
+     margin: 10px; 
 }
- .spons .spons-item {
+ .spons-item {
      display: flex;
      font-size: 2em;
      font-weight: 700;
@@ -215,15 +217,15 @@
      line-height: 100px;
      text-align: center 
 }
- .spons .large-size {
+ .large-size {
      height: 120px;
      width: 90%
 }
- .spons .medium-size {
+ .medium-size {
      height: 120px;
      width: 23.33%
 }
- .spons .small-size {
+ .small-size {
      height: 120px;
      width: 13.66%
 }
