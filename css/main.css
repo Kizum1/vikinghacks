@@ -102,6 +102,7 @@
      width: 85%;
      height: 85%;
      margin-top: 20px;
+ }
 .net{
     width: 100%;
 }
@@ -109,12 +110,11 @@
      width: 85%;
      height: 85%;
      margin-top: 20px;
+ }
 .about {
     padding: 3%;
     padding-top: 8%;
 }
- .heroVid {
-     width: 600px;
 
 .heroVid {
      width: 375px;
