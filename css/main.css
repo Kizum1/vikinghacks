@@ -80,12 +80,13 @@
      display: flex;
      justify-content: space-around;
      align-items: center;
-     background-color: rgba(0, 0, 0, 0.0);
+     background-color: var(--color-blue);
+     border-radius: 50px;
      padding: 1rem 0;
      width: 100%;
 }
  .navStick a {
-     color: var(--color-blue);
+     color: var(--color-secondary);
      text-decoration: none;
      transition: color 0.25s;
 }
