@@ -167,14 +167,14 @@
     grid-template-columns: auto auto auto auto;
     gap: 10px;
     background-color: #0d2f72;
-    padding: 2rem 2rem 3rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
 }
 .container > div {
     background-color: white;
     text-align: center;
     font-size: 30px;
   }
- img {
+.team_Icon {
      width: 100%;
      height: 100%; 
      padding: 1rem;
