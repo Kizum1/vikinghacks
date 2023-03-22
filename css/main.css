@@ -1,177 +1,220 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
- :root{
-     --ff-body: 'Karla', regular;
-     --ff-space: 'Space Grotesk';
-     --color-green: #b9d252;
-     --color-blue: #0d2f72;
-     --color-secondary: #EDF1E4;
-}
- * {
-     margin: 0;
-     font-weight: 800;
-     font-family: var(--ff-body);
-     font-size: 16px;
-     box-sizing: border-box;
+
+:root {
+    --ff-body: 'Karla', regular;
+    --ff-space: 'Space Grotesk';
+    --color-green: #b9d252;
+    --color-blue: #0d2f72;
+    --color-secondary: #EDF1E4;
 }
 
- *:focus {
-     outline: none;
-}
- *.hide {
-     display: none !important;
-}
- body {
-     margin: 0;
-     padding: 0;
-     background: url('/imgs/headerTile.png');
-     background-repeat: repeat-x;
-     background-attachment: fixed;
-     text-align: center;
-     background-color:var(--color-secondary);
-     color: var(--color-blue);
-     font-family: var(--ff-body);
-     overflow: auto;
-     flex-direction: column;
-     display: flex;
-}
- div {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-}
- header{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
-     padding: 2%;
-}
- h1 {
-     align-items: center;
-     font-size: 3.5rem;
-     font-family: var(--ff-space);
-     overflow: hidden;
-     
-}
- p {
-     font-weight: normal;
-     font-size: 20px;
-     font-size: 1rem;
-     font-family: var(--ff-space);
-     text-align: center;
+* {
+    margin: 0;
+    font-weight: 800;
+    font-family: var(--ff-body);
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
- footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 2%;
- }
+*:focus {
+    outline: none;
+}
+
+*.hide {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/imgs/headerTile.png');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    text-align: center;
+    background-color: var(--color-secondary);
+    color: var(--color-blue);
+    font-family: var(--ff-body);
+    overflow: auto;
+    flex-direction: column;
+    display: flex;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+}
+
+h1 {
+    align-items: center;
+    font-size: 3.5rem;
+    font-family: var(--ff-space);
+    overflow: hidden;
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+}
+
 /***************************** Navagation Bar CSS **************************/
- .navStick {
-     position: sticky;
-     top: 0;
-     z-index: 100;
+.navStick {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
- .navStick nav{
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     background-color: var(--color-blue);
-     border-radius: 50px;
-     padding: 1rem 0;
-     width: 100%;
-}
- .navStick a {
-     color: var(--color-secondary);
-     text-decoration: none;
-     transition: color 0.25s;
-}
- .navStick a:hover{
-     color: var(--color-green);
-}
-/***************************** Hero **************************/
- .hero {
-     padding-top: 15%;
-     display: grid;
-     grid-template-columns: 125px 1fr 125px;
-}
- .hero1 {
-     width: 85%;
-     height: 85%;
-     margin-top: 20px;
- }
-.net{
+
+.navStick nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-blue);
+    border-radius: 50px;
+    padding: 1rem 0;
     width: 100%;
 }
- .hero2 {
-     width: 85%;
-     height: 85%;
-     margin-top: 20px;
- }
-.about {
-    padding: 3%;
-    padding-top: 8%;
+
+.navStick a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: color 0.25s;
 }
 
+.navStick a:hover {
+    color: var(--color-green);
+}
+
+/***************************** Hero: Viking Hacks 2023! **************************/
+.hero {
+    padding-top: 20%;
+    display: grid;
+    grid-template-columns: 125px 1fr 125px;
+}
+
+.net {
+    width: 100%;
+}
+
+.about {
+    padding: 3%;
+
+}
+
+.about p {
+    font-weight: normal;
+    font-size: .90rem;
+    font-family: var(--ff-space);
+    text-align: center;
+}
+/********************* Coundown timer ************************/
 .heroVid {
-     width: 375px;
-     height: 300px;
-     border-radius: 5%;
+    width: 375px;
+    height: 300px;
+    border-radius: 5%;
 }
+
 #demo {
-     font-size: 50px;
-     font-family: var(--ff-space);
-     margin-bottom: 30px;
-     margin-top: 20px;
+    font-size: 2.75rem;
+    font-family: var(--ff-space);
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
+
+
 /********************* About Section CSS ************************/
-.hero1 {
-    
+
+.textPics {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.profpic {
     width: 85%;
     height: 85%;
+    margin-top: 20px;
 }
-.hero2 {
+
+.groupPic {
     width: 85%;
     height: 85%;
+    margin-top: 20px;
 }
- .top-box {
-     display: flex;
-     flex-direction: row;
+
+.top-box {
+    display: flex;
+    flex-direction: row;
 }
- .top-box .left {
-     flex: 1;
-     padding: 10px;
+
+.top-box .left {
+    flex: 1;
+    padding: 10px;
 }
- .top-box .right {
-     flex: 1;
-     padding: 10px;
+
+.left p {
+    font-weight: normal;
+    font-size: .85rem;
+    font-family: var(--ff-space);
+    text-align: center;
 }
- .bottom-box {
-     display: flex;
-     flex-direction: row-reverse;
+
+.right p {
+    font-weight: normal;
+    font-size: .85rem;
+    font-family: var(--ff-space);
+    text-align: center;
 }
- .bottom-box .left {
-     flex: 1;
-     padding: 10px;
+
+.top-box .right {
+    flex: 1;
+    padding: 10px;
 }
- .bottom-box .right {
-     flex: 1;
-     padding: 10px;
+
+.bottom-box {
+    display: flex;
+    flex-direction: row-reverse;
 }
+
+.bottom-box .left {
+    flex: 1;
+    padding: 10px;
+}
+
+.bottom-box .right {
+    flex: 1;
+    padding: 10px;
+}
+
 /************************ Organizers Cards ***************************/
 .container {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fit, minmax(160px, 2fr, 2fr));
+=======
+    grid-template-columns: auto auto auto;
+>>>>>>> a4b9ed93746b5436b995cec4d924cd9be55c1981
     margin: 0 auto;
     grid-gap: 5px;
     background-color: #0d2f72;
     padding: 2rem 2rem 3rem 2rem;
 }
-.container > div {
+
+.container>div {
     background-color: white;
     text-align: center;
+<<<<<<< HEAD
     font-size: 30px;
     padding: 10px;
   }
@@ -192,24 +235,47 @@
    margin: 0 auto;
    max-width: 100%;
    max-height: 100%;
+=======
+    font-size: 1.5rem;
+
+}
+
+.card p {
+    font-weight: normal;
+    font-size: .65rem;
+    font-family: var(--ff-space);
+    text-align: center;
+
+}
+
+.team_Icon {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.card {
+    background: #4ed283;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    transition: .2s all;
+    cursor: pointer;
+    padding: 5%;
+
+}
+
+.card img {
+    width: 250px;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+>>>>>>> a4b9ed93746b5436b995cec4d924cd9be55c1981
     object-fit: contain;
-    
+
 }
- /* .container:hover .card {
-     filter: blur(3px);
-     opacity: .5;
-     transform: scale(.98);
-     box-shadow: none;
-}
- .container:hover .card:hover {
-     transform: scale(1);
-     filter: blur(0px);
-     opacity: 1;
-     box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
-     background: #A82C2C;
-     color: white;
-} */
+
 /********************* Sponsership CSS ************************/
+<<<<<<< HEAD
 .sponsor-grid{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -219,10 +285,23 @@
     padding: 5px;
   }
 .sponsor img{
+=======
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.sponsor img {
+    max-width: 100%;
+    max-height: 100%;
+>>>>>>> a4b9ed93746b5436b995cec4d924cd9be55c1981
     margin: 0 auto;
     padding: 1.5rem;
 }
 
+<<<<<<< HEAD
  /*.spons {
      display: flex;
      flex-direction: column;
@@ -280,3 +359,22 @@
      height: 120px;
      width: 13.66%
 }*/
+=======
+/********************* Media Queries ************************/
+/* Medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    
+}
+
+/* Large devices (laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+    
+
+}
+
+/* Extra-large devices (desktops) */
+@media (min-width: 993px) {
+
+}
+>>>>>>> a4b9ed93746b5436b995cec4d924cd9be55c1981
