@@ -80,12 +80,13 @@
      display: flex;
      justify-content: space-around;
      align-items: center;
-     background-color: rgba(0, 0, 0, 0.0);
+     background-color: var(--color-blue);
+     border-radius: 50px;
      padding: 1rem 0;
      width: 100%;
 }
  .navStick a {
-     color: var(--color-blue);
+     color: var(--color-secondary);
      text-decoration: none;
      transition: color 0.25s;
 }
@@ -168,14 +169,14 @@
     margin: 1rem auto;
     gap: 10px;
     background-color: #0d2f72;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 2rem 2rem 3rem 2rem;
 }
 .container > div {
     background-color: white;
     text-align: center;
     font-size: 2rem;
   }
- img {
+.team_Icon {
      width: 100%;
      height: 100%; 
      padding: 10%;
