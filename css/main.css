@@ -163,7 +163,7 @@
 /************************ Organizers Cards ***************************/
 .container {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 2fr, 2fr));
     margin: 0 auto;
     grid-gap: 5px;
     background-color: #0d2f72;
@@ -173,6 +173,7 @@
     background-color: white;
     text-align: center;
     font-size: 30px;
+    padding: 10px;
   }
  img {
      width: 100%;
@@ -210,17 +211,18 @@
 } */
 /********************* Sponsership CSS ************************/
 .sponsor-grid{
-display: grid;
-grid-template-columns: 1fr 2fr 1fr 2fr;
-object-fit: contain;
-padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    object-fit: contain;
+    padding: 5px;
   }
 .sponsor img{
-    max-width: 100%;
-    max-height: 100%;
     margin: 0 auto;
     padding: 1.5rem;
 }
+
  /*.spons {
      display: flex;
      flex-direction: column;
