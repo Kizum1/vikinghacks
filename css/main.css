@@ -104,20 +104,8 @@ footer {
     grid-template-columns: 125px 1fr 125px;
 }
 
-.hero1 {
-    width: 85%;
-    height: 85%;
-    margin-top: 20px;
-}
-
 .net {
     width: 100%;
-}
-
-.hero2 {
-    width: 85%;
-    height: 85%;
-    margin-top: 20px;
 }
 
 .about {
@@ -151,6 +139,18 @@ footer {
 .textPics {
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.profpic {
+    width: 85%;
+    height: 85%;
+    margin-top: 20px;
+}
+
+.groupPic {
+    width: 85%;
+    height: 85%;
+    margin-top: 20px;
 }
 
 .top-box {
@@ -262,60 +262,20 @@ footer {
     padding: 1.5rem;
 }
 
-/*.spons {
-     display: flex;
-     flex-direction: column;
-     gap: 30px;
-     margin: 0 140px 144px;
-     position: relative;
-     z-index: 1; 
+/********************* Media Queries ************************/
+/* Medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    
 }
- .spons img {
-     max-height: 100%;
-     max-width: 100%;
-     object-fit: contain 
+
+/* Large devices (laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+    
+
 }
- .spons-header {
-     color: #09426b;
-     font-family: PP Pangram Sans Rounded Bold;
-     font-size: 90px;
-     font-weight: 400;
-     text-align: left;
-     white-space: nowrap;
-     margin: 50px; 
+
+/* Extra-large devices (desktops) */
+@media (min-width: 993px) {
+
 }
- .logo-container {
-     -ms-box-orient: horizontal;
-     align-items: center;
-     display: flex;
-     display: -webkit-box;
-     display: -moz-box;
-     display: -ms-flexbox;
-     display: -moz-flex;
-     display: -webkit-flex;
-     flex-wrap: wrap;
-     gap: 60px;
-     justify-content: center;
-     list-style: none;
-     margin: 10px; 
-}
- .spons-item {
-     display: flex;
-     font-size: 2em;
-     font-weight: 700;
-     justify-content: center;
-     line-height: 100px;
-     text-align: center 
-}
- .large-size {
-     height: 120px;
-     width: 90%
-}
- .medium-size {
-     height: 120px;
-     width: 23.33%
-}
- .small-size {
-     height: 120px;
-     width: 13.66%
-}*/
