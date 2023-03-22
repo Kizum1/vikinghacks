@@ -200,11 +200,8 @@ footer {
 /************************ Organizers Cards ***************************/
 .container {
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns: repeat(auto-fit, minmax(160px, 2fr, 2fr));
-=======
-    grid-template-columns: auto auto auto;
->>>>>>> a4b9ed93746b5436b995cec4d924cd9be55c1981
+    grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+    grid-template-rows: repeat(6,200px);
     margin: 0 auto;
     grid-gap: 5px;
     background-color: #0d2f72;
@@ -214,7 +211,6 @@ footer {
 .container>div {
     background-color: white;
     text-align: center;
-<<<<<<< HEAD
     font-size: 30px;
     padding: 10px;
   }
@@ -235,8 +231,7 @@ footer {
    margin: 0 auto;
    max-width: 100%;
    max-height: 100%;
-=======
-    font-size: 1.5rem;
+   font-size: 1.5rem;
 
 }
 
@@ -269,13 +264,11 @@ footer {
     margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
->>>>>>> a4b9ed93746b5436b995cec4d924cd9be55c1981
     object-fit: contain;
 
 }
 
 /********************* Sponsership CSS ************************/
-<<<<<<< HEAD
 .sponsor-grid{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -285,23 +278,16 @@ footer {
     padding: 5px;
   }
 .sponsor img{
-=======
-.sponsor-grid {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr;
     object-fit: contain;
     padding: 10px;
-}
-
-.sponsor img {
     max-width: 100%;
     max-height: 100%;
->>>>>>> a4b9ed93746b5436b995cec4d924cd9be55c1981
     margin: 0 auto;
     padding: 1.5rem;
 }
 
-<<<<<<< HEAD
  /*.spons {
      display: flex;
      flex-direction: column;
