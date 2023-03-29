@@ -200,11 +200,11 @@ footer {
 /************************ Organizers Cards ***************************/
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 2fr, 2fr));
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap:5px;
     margin: 0 auto;
-    grid-gap: 5px;
     background-color: #0d2f72;
-    padding: 2rem 2rem 3rem 2rem;
+    padding: 2rem  2rem 2rem 2rem;
 }
 
 .container>div {
@@ -259,8 +259,7 @@ footer {
 
 
 .sponsor-grid {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     object-fit: contain;
     padding: 10px;
 }
