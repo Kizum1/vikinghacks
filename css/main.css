@@ -200,7 +200,7 @@ footer {
 /************************ Organizers Cards ***************************/
 .container {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 250px 250px 250px 250px;
     margin: 0 auto;
     grid-gap:5px;
     background-color: #0d2f72;
@@ -226,6 +226,15 @@ footer {
     width: 100%;
     height: 100%;
     padding: 1rem;
+}
+
+.card {
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    transition: .2s all;
+    cursor: pointer;
+    padding: 5%;
+
 }
 
 .card img {
@@ -263,9 +272,16 @@ footer {
 
 /********************* Media Queries ************************/
 /* Medium devices (tablets) */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
 
-    
+    .container {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        margin: 0 auto;
+        grid-gap:5px;
+        background-color: #0d2f72;
+        padding: 2rem  2rem 2rem 2rem;
+    }
 }
 
 /* Large devices (laptops) */
