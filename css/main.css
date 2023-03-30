@@ -275,6 +275,33 @@ footer {
 }
 
 /********************* Sponsership CSS ************************/
+.sponsor_Gallery {
+    width: 400px;
+    margin: auto;
+} 
+  
+.frame {
+    position:relative;
+    width:400px;
+    height:300px;
+    margin: 1rem 0;
+}
+  
+.slide {
+    display:block;
+    margin-bottom: 2rem;
+}
+  
+  
+.hide {
+    display: none;
+}
+  
+  
+.current {
+    transition: opacity .5s ease-out;
+}
+ /* 
 .sponsor-grid{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -282,7 +309,7 @@ footer {
     align-items: center;
     object-fit: contain;
     padding: 5px;
-  }
+}
 
 
 .sponsor-grid {
@@ -290,8 +317,8 @@ footer {
     object-fit: contain;
     padding: 10px;
 }
-
-.sponsor img {
+*/
+.sponsor_Gallery img {
     max-width: 100%;
     max-height: 100%;
     margin: 0 auto;
