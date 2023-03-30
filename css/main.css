@@ -360,7 +360,7 @@ ul li:nth-child(5):hover span {
     left: 50%;
     top: 600px;
     transform: translate(-50%, -50%);
-    background: linear-gradient(-45deg, #DFB79E, #DFB79E, #15a530, #c19c38, #E25D52, #E25D52);
+    background: linear-gradient(-45deg, #E0FFF0, #C1FFC1, #90EE90, #66CDAA, #32CD32, #008000);
     background-size: 300%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
