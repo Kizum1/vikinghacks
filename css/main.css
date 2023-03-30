@@ -275,6 +275,10 @@ footer {
 }
 
 /********************* Sponsership CSS ************************/
+.gallery_S {
+    width: 600px;
+    margin: auto;
+}
 figure {
     width: 400px;
     margin: auto;
