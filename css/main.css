@@ -337,118 +337,30 @@ footer {
 /***************************** Socials and Links **************************/
 
 .socials {
-    position: relative;
-    top: 275px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    padding: 0;
-}
-
-ul  {
-    position:relative;
-    width: 40px;
-    height: 5px;
-    background-color: #537c39;
-    margin: auto;
-}
-
-li {
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 70px;
-    margin: 0 20px;
-}
-
-span {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    display: flex !important;
-    background: #2a2a2a;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    padding: 2rem;
     justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 30px !important;
-    transition: 1.5s ease-out;
-}
+ }
+ .fa{
+    font-size: 50px;
+    color: white;
+ }
 
-ul li:hover span {
-    transition: .3s;
+.fa-discord{
+    background: red !important;
 }
-
-ul li:nth-child(2):hover span {
+.fa-github{
     background: #52b62b !important;
 }
 
-ul li:nth-child(3):hover span {
-    background: #6A9AEE !important;
+.fa-instagram{
+    background: yellow !important;
 }
 
-ul li:nth-child(4):hover span {
-    background: #3e7b0c !important;
-}
-
-ul li:nth-child(5):hover span {
-    background: #2C3456 !important;
-}
-/***************************** Socials and Links **************************/
-
-.socials {
-    position: relative;
-    top: 275px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    padding: 0;
-}
-
-ul .socials{
-    width: 40px;
-    height: 5px;
-    background-color: #537c39;
-    margin: auto;
-}
-
-li {
-    list-style: none;
-    width: 70px;
-    height: 70px;
-    margin: 0 20px;
-}
-
-span {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    display: flex !important;
-    background: #2a2a2a;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 30px !important;
-    transition: 1.5s ease-out;
-}
-
-ul li:hover span {
-    transition: .3s;
-}
-
-ul li:nth-child(2):hover span {
-    background: #52b62b !important;
-}
-
-ul li:nth-child(3):hover span {
-    background: #6A9AEE !important;
-}
-
-ul li:nth-child(4):hover span {
-    background: #3e7b0c !important;
-}
-
-ul li:nth-child(5):hover span {
-    background: #2C3456 !important;
+.fa-linkedin {
+    background: orange !important;
 }
 
 /********************* Media Queries ************************/
