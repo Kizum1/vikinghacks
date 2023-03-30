@@ -275,7 +275,7 @@ footer {
 }
 
 /********************* Sponsership CSS ************************/
-.sponsor_Gallery {
+figure {
     width: 400px;
     margin: auto;
 } 
