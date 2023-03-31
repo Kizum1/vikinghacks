@@ -16,8 +16,8 @@ function init() {
   // show the first slide
   slides[0].classList.remove("hide");
   
-   next_btn.addEventListener("click",changeSlide);
-   back_btn.addEventListener("click", changeSlide);
+  //  next_btn.addEventListener("click",changeSlide);
+  //  back_btn.addEventListener("click", changeSlide);
 
    caption.innerHTML = slides[0].alt;
 }
