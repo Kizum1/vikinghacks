@@ -130,7 +130,14 @@
      border-radius: 5%;
 }
 /********************* About Section CSS ************************/
- .textPics {
+video {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+ }
+
+.textPics {
      padding-top: 5%;
      padding-bottom: 5%;
 }
