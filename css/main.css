@@ -278,6 +278,7 @@ footer {
 .gallery_S {
     width: 600px;
     margin: auto;
+    text-align: center;
 }
 figure {
     width: 400px;
