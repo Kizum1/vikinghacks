@@ -53,11 +53,12 @@ header {
 
 h1 {
     align-items: center;
-    font-size: 3.5rem;
+    font-size: 3.0rem;
     font-family: var(--ff-space);
     overflow: hidden;
 
 }
+
 
 
 footer {
@@ -154,12 +155,7 @@ footer {
     border-radius: 5%;
 }
 
-#demo {
-    font-size: 2.75rem;
-    font-family: var(--ff-space);
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
+
 
 
 /********************* About Section CSS ************************/
