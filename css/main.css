@@ -1,428 +1,351 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-:root {
-    --ff-body: 'Karla', regular;
-    --ff-space: 'Space Grotesk';
-    --color-green: #b9d252;
-    --color-blue: #0d2f72;
-    --color-secondary: #EDF1E4;
+ :root {
+     --ff-body: 'Karla', regular;
+     --ff-space: 'Space Grotesk';
+     --color-green: #b9d252;
+     --color-blue: #0d2f72;
+     --color-secondary: #EDF1E4;
 }
-
-* {
-    margin: 0;
-    font-weight: 800;
-    font-family: var(--ff-body);
-    font-size: 20px;
-    box-sizing: border-box;
+ * {
+     margin: 0;
+     font-weight: 800;
+     font-family: var(--ff-body);
+     font-size: 20px;
+     box-sizing: border-box;
 }
-
-*:focus {
-    outline: none;
+ *:focus {
+     outline: none;
 }
-
-*.hide {
-    display: none !important;
+ *.hide {
+     display: none !important;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    background: url('/imgs/headerTile.png');
-    background-repeat: repeat-x;
-    background-attachment: fixed;
-    text-align: center;
-    background-color: var(--color-secondary);
-    overflow: auto;
-    flex-direction: column;
-    display: flex;
+ body {
+     margin: 0;
+     padding: 0;
+     background: url('/imgs/headerTile.png');
+     background-repeat: repeat-x;
+     background-attachment: fixed;
+     text-align: center;
+     background-color: var(--color-secondary);
+     overflow: auto;
+     flex-direction: column;
+     display: flex;
 }
-
-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 2%;
+ header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 2%;
 }
-
-h1 {
-    align-items: center;
-    font-size: 3.0rem;
-    font-family: var(--ff-space);
-    overflow: hidden;
-
+ h1 {
+     align-items: center;
+     font-size: 3.0rem;
+     font-family: var(--ff-space);
+     overflow: hidden;
 }
-
-
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 2%;
+ footer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 2%;
 }
-
 /***************************** Navagation Bar CSS **************************/
-.navStick {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+ .navStick {
+     position: sticky;
+     top: 0;
+     z-index: 100;
 }
-
-.navStick nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--color-blue);
-    border-radius: 50px;
-    padding: 1rem 0;
-    width: 100%;
+ .navStick nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: var(--color-blue);
+     border-radius: 50px;
+     padding: 1rem 0;
+     width: 100%;
 }
-
-.navStick a {
-    color: var(--color-secondary);
-    text-decoration: none;
-    transition: color 0.25s;
+ .navStick a {
+     color: var(--color-secondary);
+     text-decoration: none;
+     transition: color 0.25s;
 }
-
-.navStick a:hover {
-    color: var(--color-green);
+ .navStick a:hover {
+     color: var(--color-green);
 }
-
-
 /***************************** Hero: Viking Hacks 2023! **************************/
-.hero {
-    padding-top: 20%;
-    display: grid;
-    grid-template-columns: 125px 1fr 125px;
+ .hero {
+     padding-top: 20%;
+     display: grid;
+     grid-template-columns: 125px 1fr 125px;
 }
-
-.net {
-    width: 100%;
+ .net {
+     width: 100%;
 }
-
-.about {
-    padding: 3%;
-
+ .about {
+     padding: 3%;
 }
-
-.about p {
-    font-weight: normal;
-    font-size: .90rem;
-    font-family: var(--ff-space);
-    text-align: center;
+ .about p {
+     font-weight: normal;
+     font-size: .90rem;
+     font-family: var(--ff-space);
+     text-align: center;
 }
-
-.text {
-    position: center;
-
-    background: linear-gradient(-45deg, #32CD32, #008000);
-    background-size: 300%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animated_text 6s ease-in-out infinite;
-    -moz-animation: animated_text 6s ease-in-out infinite;
-    -webkit-animation: animated_text 6s ease-in-out infinite;
+ .text {
+     position: center;
+     background: linear-gradient(-45deg, #32CD32, #008000);
+     background-size: 300%;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 900;
+     font-size: 3.5rem;
+     text-transform: uppercase;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     animation: animated_text 6s ease-in-out infinite;
+     -moz-animation: animated_text 6s ease-in-out infinite;
+     -webkit-animation: animated_text 6s ease-in-out infinite;
 }
-
-@keyframes animated_text {
-    0% {
-        background-position: 0px 50%;
+ @keyframes animated_text {
+     0% {
+         background-position: 0px 50%;
     }
-    50% {
-        background-position: 100% 50%;
+     50% {
+         background-position: 100% 50%;
     }
-    100% {
-        background-position: 0px 50%;
+     100% {
+         background-position: 0px 50%;
     }
 }
-
 /********************* Coundown timer ************************/
-.heroVid {
-    width: 375px;
-    height: 300px;
-    border-radius: 5%;
+ .heroVid {
+     width: 375px;
+     height: 300px;
+     border-radius: 5%;
 }
-
-
-
-
 /********************* About Section CSS ************************/
-
-.textPics {
-    padding-top: 5%;
-    padding-bottom: 5%;
+ .textPics {
+     padding-top: 5%;
+     padding-bottom: 5%;
 }
-
-.profpic {
-    width: 85%;
-    height: 85%;
-    margin-top: 20px;
+ .profpic {
+     width: 85%;
+     height: 85%;
+     margin-top: 20px;
 }
-
-.groupPic {
-    width: 85%;
-    height: 85%;
-    margin-top: 20px;
+ .groupPic {
+     width: 85%;
+     height: 85%;
+     margin-top: 20px;
 }
-
-.top-box {
-    display: flex;
-    flex-direction: row;
+ .top-box {
+     display: flex;
+     flex-direction: row;
 }
-
-.top-box .left {
-    flex: 1;
-    padding: 10px;
+ .top-box .left {
+     flex: 1;
+     padding: 10px;
 }
-
-.left p {
-    font-weight: normal;
-    font-size: .85rem;
-    font-family: var(--ff-space);
-    text-align: center;
+ .left p {
+     font-weight: normal;
+     font-size: .85rem;
+     font-family: var(--ff-space);
+     text-align: center;
 }
-
-.right p {
-    font-weight: normal;
-    font-size: .85rem;
-    font-family: var(--ff-space);
-    text-align: center;
+ .right p {
+     font-weight: normal;
+     font-size: .85rem;
+     font-family: var(--ff-space);
+     text-align: center;
 }
-
-.top-box .right {
-    flex: 1;
-    padding: 10px;
+ .top-box .right {
+     flex: 1;
+     padding: 10px;
 }
-
-.bottom-box {
-    display: flex;
-    flex-direction: row-reverse;
+ .bottom-box {
+     display: flex;
+     flex-direction: row-reverse;
 }
-
-.bottom-box .left {
-    flex: 1;
-    padding: 10px;
+ .bottom-box .left {
+     flex: 1;
+     padding: 10px;
 }
-
-.bottom-box .right {
-    flex: 1;
-    padding: 10px;
+ .bottom-box .right {
+     flex: 1;
+     padding: 10px;
 }
-
 /************************ Organizers Cards ***************************/
-.org_Heading {
-    text-align: center;
-    padding-top: 10rem;
+ .org_Heading {
+     text-align: center;
+     padding-top: 10rem;
 }
-
-
-.container {
-    display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    margin: 0 auto;
-    grid-gap:5px;
-    background-color: #0d2f72;
-    padding: 2rem  2rem 2rem 2rem;
+ .container {
+     display: grid;
+     grid-template-columns: 250px 250px 250px 250px;
+     margin: 0 auto;
+     grid-gap:5px;
+     background-color: #0d2f72;
+     padding: 2rem 2rem 2rem 2rem;
 }
-
-.container>div {
-    background-color: white;
-    text-align: center;
-    font-size: 1.5rem;
-
+ .container>div {
+     background-color: white;
+     text-align: center;
+     font-size: 1.5rem;
 }
-
-.card p {
-    font-weight: normal;
-    font-size: .65rem;
-    font-family: var(--ff-space);
-    text-align: center;
-
+ .card p {
+     font-weight: normal;
+     font-size: .65rem;
+     font-family: var(--ff-space);
+     text-align: center;
 }
-
-.team_Icon {
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
+ .team_Icon {
+     width: 100%;
+     height: 100%;
+     padding: 1rem;
 }
-
-.card {
-    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-    transition: .2s all;
-    cursor: pointer;
-    padding: 5%;
-
+ .card {
+     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+     border-radius: 3px;
+     transition: .2s all;
+     cursor: pointer;
+     padding: 5%;
 }
-
-.card img {
-    width: 300px;
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-
+ .card img {
+     width: 300px;
+     margin: 0 auto;
+     max-width: 100%;
+     max-height: 100%;
+     object-fit: contain;
 }
-
 /********************* Sponsership CSS ************************/
-.gallery_S {
-    width: 600px;
-    margin: auto;
-    text-align: center;
-    
+ .gallery_S {
+     width: 600px;
+     margin: auto;
+     text-align: center;
 }
-figure {
-    width: 400px;
-    margin: auto;
-    padding: 2rem;
-} 
-  
-.frame {
-
-    width:400px;
-    height:300px;
-    
+ figure {
+     width: 400px;
+     margin: auto;
+     padding: 2rem;
 }
-  
-.slide {
-    display:block;
-    margin-bottom: 2rem;
+ .frame {
+     width:400px;
+     height:300px;
 }
-  
-  
-.hide {
-    display: none;
+ .slide {
+     display:block;
+     margin-bottom: 2rem;
 }
-  
-  
-.current {
-    transition: opacity .5s ease-out;
+ .hide {
+     display: none;
 }
-
-.sponsor_Gallery img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
-    padding: 1.5rem;
+ .current {
+     transition: opacity .5s ease-out;
 }
-
-.faq {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  
-  /* .active, .faq:hover {
-    background-color: #ccc;
-  } */
-  
-  .faq:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  }
-  
-  .answer{
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
+ .sponsor_Gallery img {
+     max-width: 100%;
+     max-height: 100%;
+     margin: 0 auto;
+     padding: 1.5rem;
+}
+ .faq {
+     background-color: #eee;
+     color: #444;
+     cursor: pointer;
+     padding: 18px;
+     width: 100%;
+     border: none;
+     text-align: left;
+     outline: none;
+     font-size: 15px;
+     transition: 0.4s;
+}
+/* .active, .faq:hover {
+     background-color: #ccc;
+}
+ */
+ .faq:after {
+     content: '\002B';
+     color: #777;
+     font-weight: bold;
+     float: right;
+     margin-left: 5px;
+}
+ .active:after {
+     content: "\2212";
+}
+ .answer{
+     padding: 0 18px;
+     background-color: white;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.2s ease-out;
+}
 /***************************** Socials and Links **************************/
-
-.socials {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 10px;
-    padding: 2rem;
-    justify-content: center;
- }
+ .socials {
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     column-gap: 10px;
+     padding: 2rem;
+     justify-content: center;
+}
  .fa{
-    font-size: 50px;
-    color: white;
-    border-radius: 50%;
-    padding: 1.5rem;
-    text-decoration: none;
- }
-.fa-discord{
-    background: #0d2f72 !important; 
+     font-size: 50px;
+     color: white;
+     border-radius: 50%;
+     padding: 1.5rem;
+     text-decoration: none;
 }
-.fa-github{
-    background: #0d2f72 !important;
+ .fa-discord{
+     background: #0d2f72 !important;
 }
-
-.fa-instagram{
-    background: #0d2f72!important;
+ .fa-github{
+     background: #0d2f72 !important;
 }
-
-.fa-linkedin {
-    background: #0d2f72 !important;
+ .fa-instagram{
+     background: #0d2f72!important;
 }
-.fa-github:hover{
-    opacity: 0.7;
-    color: red;
+ .fa-linkedin {
+     background: #0d2f72 !important;
 }
-.fa-discord:hover {
-    opacity: 0.7;
-    color: yellow;
-  }
-  .fa-instagram:hover{
-    opacity: 0.7;
-    color:  #b9d252;
-  }
-  .fa-linkedin:hover{
-    opacity: 0.7;
-    color:  blue;
-  }
-
+ .fa-github:hover{
+     opacity: 0.7;
+     color: red;
+}
+ .fa-discord:hover {
+     opacity: 0.7;
+     color: yellow;
+}
+ .fa-instagram:hover{
+     opacity: 0.7;
+     color: #b9d252;
+}
+ .fa-linkedin:hover{
+     opacity: 0.7;
+     color: blue;
+}
 /********************* Media Queries ************************/
 /* Medium devices (tablets) */
-@media (min-width: 320px) and (max-width: 768px) {
-
-    .container {
-        display: grid;
-        grid-template-columns: 200px 200px;
-        margin: 0 auto;
-        grid-gap:5px;
-        background-color: #0d2f72;
-        padding: 2rem  2rem 2rem 2rem;
+ @media (min-width: 320px) and (max-width: 768px) {
+     .container {
+         display: grid;
+         grid-template-columns: 200px 200px;
+         margin: 0 auto;
+         grid-gap:5px;
+         background-color: #0d2f72;
+         padding: 2rem 2rem 2rem 2rem;
     }
 }
-
 /* Large devices (laptops) */
-@media (min-width: 769px) and (max-width: 992px) {
-    
-
+ @media (min-width: 769px) and (max-width: 992px) {
 }
-
 /* Extra-large devices (desktops) */
-@media (min-width: 993px) {
-
+ @media (min-width: 993px) {
 }
-
+ 
