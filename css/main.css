@@ -335,9 +335,9 @@ figure {
     transition: 0.4s;
   }
   
-  .active, .faq:hover {
+  /* .active, .faq:hover {
     background-color: #ccc;
-  }
+  } */
   
   .faq:after {
     content: '\002B';
