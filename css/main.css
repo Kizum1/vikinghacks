@@ -254,31 +254,27 @@
      margin: 0 auto;
      padding: 1.5rem;
 }
+
+/************************************************ FAQ CSS ******************************************************/
  .faq {
      background-color: #eee;
      color: #444;
      cursor: pointer;
      padding: 18px;
-     width: 100%;
+     width: 50%;
      border: none;
-     text-align: left;
+     text-align: center;
      outline: none;
      font-size: 15px;
      transition: 0.4s;
+     
 }
-/* .active, .faq:hover {
-     background-color: #ccc;
-}
- */
  .faq:after {
      content: '\002B';
      color: #777;
      font-weight: bold;
      float: right;
      margin-left: 5px;
-}
- .active:after {
-     content: "\2212";
 }
  .answer{
      padding: 0 18px;
