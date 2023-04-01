@@ -46,9 +46,17 @@
 }
  h1 {
      align-items: center;
-     font-size: 3.0rem;
+     font-size: 2.0rem;
      font-family: var(--ff-space);
+     color: var(--color-blue);
      overflow: hidden;
+}
+h2{
+    align-items: center;
+    font-size: 1rem;
+    font-family: var(--ff-space);
+    font-weight: 900;
+    color: var(--color-blue);
 }
  footer {
      display: flex;
@@ -98,6 +106,9 @@
      font-family: var(--ff-space);
      text-align: center;
 }
+.college_Map{
+    text-decoration: none;
+}
  .text {
      position: center;
      background: linear-gradient(-45deg, #32CD32, #008000);
@@ -128,6 +139,10 @@
      width: 375px;
      height: 300px;
      border-radius: 5%;
+}
+.demo{
+    text-align: center;
+    
 }
 /********************* About Section CSS ************************/
 video {
@@ -191,6 +206,7 @@ video {
  .org_Heading {
      text-align: center;
      padding-top: 10rem;
+     padding-bottom: 2%;
 }
  .container {
      display: grid;
