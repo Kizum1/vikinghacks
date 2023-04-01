@@ -11,7 +11,7 @@
      --ff-ggle: 'GFont', sans-serif;
      --color-green: #b9d252;
      --color-drkGreen: #008000;
-     --color-blue: #0d2f72;
+     --color-blue: #0A789B;
      --color-secondary: #EDF1E4;
 }
  * {
@@ -97,12 +97,15 @@ h2 {
 }
 /***************************** Hero: Viking Hacks 2023! **************************/
  .hero {
-     padding-top: 20%;
+     padding-top: 5%;
      display: grid;
      grid-template-columns: 125px 1fr 125px;
 }
- .net {
-     width: 100%;
+.logo {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
 }
  .about {
      padding: 3%;
@@ -118,7 +121,7 @@ h2 {
 }
  .text {
      position: center;
-     background: linear-gradient(-45deg, #32CD32, #008000);
+     background: linear-gradient(-45deg, #A9E551, #0F9D58);
      background-size: 300%;
      font-family: var(--ff-ggle);
      font-weight: 1200;
@@ -220,7 +223,7 @@ video {
      grid-template-columns: 250px 250px 250px 250px;
      margin: 0 auto;
      grid-gap:5px;
-     background-color: #0d2f72;
+     background-color: var(--color-blue);
      padding: 2rem 2rem 2rem 2rem;
 }
  .container>div {
@@ -329,16 +332,16 @@ video {
      text-decoration: none;
 }
  .fa-discord{
-     background: #0d2f72 !important;
+     background: var(--color-blue) !important;
 }
  .fa-github{
-     background: #0d2f72 !important;
+     background: var(--color-blue) !important;
 }
  .fa-instagram{
-     background: #0d2f72!important;
+     background: var(--color-blue)!important;
 }
  .fa-linkedin {
-     background: #0d2f72 !important;
+     background: var(--color-blue) !important;
 }
  .fa-github:hover{
      opacity: 0.7;
@@ -364,7 +367,7 @@ video {
          grid-template-columns: 200px 200px;
          margin: 0 auto;
          grid-gap:5px;
-         background-color: #0d2f72;
+         background-color: var(--color-blue);
          padding: 2rem 2rem 2rem 2rem;
     }
 }
