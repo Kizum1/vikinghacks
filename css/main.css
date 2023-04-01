@@ -104,10 +104,11 @@ footer {
   grid-template-columns: 125px 1fr 125px;
 }
 .logo {
-  max-width: 350px;
+  max-width: 250px;
   width: 100%;
   height: auto;
   padding: 1rem;
+  z-index: 2;
 }
 .about {
   padding: 3%;
@@ -125,19 +126,20 @@ footer {
   position: center;
   background: linear-gradient(
     -45deg,
-    #a9e551,
+    #e8f6d2,
     #f9f9f9
   ); /*linear-gradient(-45deg, #a9e551, #0f9d58)*/
   background-size: 300%;
   font-family: "Quicksand"; /*var(--ff-ggle)*/
   font-weight: 1200;
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animated_text 6s ease-in-out infinite;
   -moz-animation: animated_text 6s ease-in-out infinite;
   -webkit-animation: animated_text 6s ease-in-out infinite;
+  z-index: 2;
 }
 .text-s {
   position: center;
@@ -401,4 +403,17 @@ figure {
 }
 .splash_info {
   position: absolute;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-blue);
+  border-radius: 25px;
 }

@@ -14,7 +14,7 @@
     <link rel="icon" type="image/x-icon" href="imgs\VikingHacksLogo.png" />
     <script src="js\clock.js"></script>
     <script src="js\gallery.js"></script>
-    <script src="js\faq.js"></script>
+    <script src="js\faq.js" defer></script>
   </head>
 
   <body>
@@ -47,7 +47,7 @@
       </div>
       <style>
         .leaf_particles {
-          top: -3rem;
+          top: -8rem;
           position: absolute;
           height: 100%;
           width: 100%;
@@ -62,14 +62,19 @@
         .leaf_particles > img {
           height: 3rem;
         }
-        .leaf_particle:nth-child(3n) {
+        .leaf_particle:nth-of-type(1n) {
+          height: 3rem;
+          z-index: 3;
+        }
+        .leaf_particle:nth-of-type(2n) {
+          height: 2.5rem;
+          filter: hue-rotate(-40deg) blur(1px);
+          z-index: 2;
+        }
+        .leaf_particle:nth-of-type(3n) {
           height: 2rem;
-        }
-        .leaf_particle:nth-child(2n) {
-          filter: hue-rotate(-40deg);
-        }
-        .leaf_particle:nth-child(3n) {
-          filter: hue-rotate(40deg);
+          filter: hue-rotate(40deg) blur(3px);
+          z-index: 1;
         }
         @-webkit-keyframes leaves_particles-fall {
           0% {
@@ -210,21 +215,27 @@
             rgba(121, 255, 202, 1) 100%
           );
           padding-top: 4rem;
+          backdrop-filter: blur(10px);
+        }
+        .banner_image {
+          z-index: 2;
         }
         #viking_left {
           position: absolute;
           height: 30rem;
-          left: -6rem;
+          left: -12rem;
           filter: blur(0px);
-          transition: filter 800ms ease;
+          transition: filter 800ms ease, opacity 800ms ease;
         }
         #viking_right {
           position: absolute;
           height: 30rem;
           right: -6rem;
           animation-delay: 500ms;
-          opacity: 100%;
-          transition: opacity 800ms ease;
+          top: 0px;
+          filter: blur(0px);
+          transition: left 800ms ease, top 800ms ease, filter 800ms ease,
+            opacity 800ms ease;
         }
         .floating {
           animation-name: floating;
@@ -247,11 +258,36 @@
           }
         }
         @media (max-width: 1000px) {
-          #viking_right {
-            opacity: 0%;
-          }
           #viking_left {
             filter: blur(9px);
+          }
+          #viking_right {
+            filter: blur(9px);
+          }
+          @media (max-width: 700px) {
+            #viking_left {
+              top: 0rem;
+              filter: blur(9px);
+            }
+            #viking_right {
+              top: -8rem;
+              left: 6rem;
+              filter: blur(9px);
+            }
+            .splash_banner {
+              height: 40rem;
+            }
+            .text {
+              font-size: 3rem !important;
+            }
+          }
+          @media (max-width: 700px) {
+            #viking_left {
+              opacity: 0%;
+            }
+            #viking_right {
+              opacity: 0%;
+            }
           }
         }
       </style>
@@ -260,13 +296,13 @@
       </script>
       <div>
         <img
-          class="floating"
+          class="floating banner_image"
           id="viking_left"
           alt="viking_sitting_on_tree"
           src="imgs/viking_left.png"
         />
         <img
-          class="floating"
+          class="floating banner_image"
           id="viking_right"
           alt="viking_sitting_on_tree"
           src="imgs/viking_right.png"
