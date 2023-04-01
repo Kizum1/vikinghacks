@@ -402,3 +402,213 @@ figure {
 .splash_info {
   position: absolute;
 }
+
+/* Splash Page */
+.leaf_particles {
+  top: -3rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.leaf_particle {
+  color: #fff;
+  font-size: 2em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+  pointer-events: none;
+}
+.leaf_particles > img {
+  height: 3rem;
+}
+.leaf_particle:nth-child(3n) {
+  height: 2rem;
+}
+.leaf_particle:nth-child(2n) {
+  filter: hue-rotate(-40deg);
+}
+.leaf_particle:nth-child(3n) {
+  filter: hue-rotate(40deg);
+}
+@-webkit-keyframes leaves_particles-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes leaves_particles-shake {
+  0% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateX(80px) rotate(-30deg);
+    transform: translateX(80px) rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+@keyframes leaves_particles-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes leaves_particles-clear {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes leaves_particles-shake {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateX(80px) rotate(-30deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+.leaf_particle {
+  position: absolute;
+  top: -10%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-animation-name: leaves_particles-fall, leaves_particles-shake,
+    leaves_particles-rot, leaves_particles-clear;
+  -webkit-animation-duration: 10s, 3s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: leaves_particles-fall, leaves_particles-shake,
+    leaves_particles-clear, leaves_particles-rot;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+.leaf_particle:nth-of-type(0) {
+  left: 1%;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s;
+}
+.leaf_particle:nth-of-type(1) {
+  left: 10%;
+  -webkit-animation-delay: 1s, 1s;
+  animation-delay: 1s, 1s;
+}
+.leaf_particle:nth-of-type(2) {
+  left: 20%;
+  -webkit-animation-delay: 6s, 0.5s;
+  animation-delay: 6s, 0.5s;
+}
+.leaf_particle:nth-of-type(3) {
+  left: 30%;
+  -webkit-animation-delay: 4s, 2s;
+  animation-delay: 4s, 2s;
+}
+.leaf_particle:nth-of-type(4) {
+  left: 40%;
+  -webkit-animation-delay: 2s, 2s;
+  animation-delay: 2s, 2s;
+}
+.leaf_particle:nth-of-type(5) {
+  left: 50%;
+  -webkit-animation-delay: 8s, 3s;
+  animation-delay: 8s, 3s;
+}
+.leaf_particle:nth-of-type(6) {
+  left: 60%;
+  -webkit-animation-delay: 6s, 2s;
+  animation-delay: 6s, 2s;
+}
+.leaf_particle:nth-of-type(7) {
+  left: 70%;
+  -webkit-animation-delay: 2.5s, 1s;
+  animation-delay: 2.5s, 1s;
+}
+.leaf_particle:nth-of-type(8) {
+  left: 80%;
+  -webkit-animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s;
+}
+.leaf_particle:nth-of-type(9) {
+  left: 90%;
+  -webkit-animation-delay: 3s, 1.5s;
+  animation-delay: 3s, 1.5s;
+}
+
+#splash_banner {
+  width: 100vw;
+  height: 30rem;
+  background: rgb(111, 149, 252);
+  background: linear-gradient(
+    0deg,
+    rgba(111, 149, 252, 1) 0%,
+    rgba(121, 255, 202, 1) 100%
+  );
+  padding-top: 4rem;
+}
+#viking_left {
+  position: absolute;
+  height: 30rem;
+  left: -6rem;
+  filter: blur(0px);
+  transition: filter 800ms ease;
+}
+#viking_right {
+  position: absolute;
+  height: 30rem;
+  right: -6rem;
+  animation-delay: 500ms;
+  opacity: 100%;
+  transition: opacity 800ms ease;
+}
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+@media (max-width: 1000px) {
+  #viking_right {
+    opacity: 0%;
+  }
+  #viking_left {
+    filter: blur(9px);
+  }
+}
