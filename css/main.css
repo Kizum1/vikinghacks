@@ -8,15 +8,16 @@
 }
 :root {
      --ff-body: 'Karla', regular;
-     --ff-space: 'GFont', sans-serif;
+     --ff-ggle: 'GFont', sans-serif;
      --color-green: #b9d252;
+     --color-drkGreen: #008000;
      --color-blue: #0d2f72;
      --color-secondary: #EDF1E4;
 }
  * {
      margin: 0;
      font-weight: 800;
-     font-family: var(--ff-body);
+     font-family: var(--ff-ggle);
      font-size: 20px;
      box-sizing: border-box;
 }
@@ -53,14 +54,14 @@
  h1 {
      align-items: center;
      font-size: 2.0rem;
-     font-family: var(--ff-space);
+     font-family: var(--ff-ggle);
      color: var(--color-blue);
      overflow: hidden;
 }
 h2 {
     align-items: center;
     font-size: 1rem;
-    font-family: var(--ff-space);
+    font-family: var(--ff-ggle);
     font-weight: 900;
     color: var(--color-blue);
 }
@@ -92,7 +93,7 @@ h2 {
      transition: color 0.25s;
 }
  .navStick a:hover {
-     color: var(--color-green);
+     color: var(--color-drkGreen);
 }
 /***************************** Hero: Viking Hacks 2023! **************************/
  .hero {
@@ -109,7 +110,7 @@ h2 {
  .about p {
      font-weight: normal;
      font-size: .90rem;
-     font-family: var(--ff-space);
+     font-family: var(--ff-ggle);
      text-align: center;
 }
 .college_Map{
@@ -119,7 +120,7 @@ h2 {
      position: center;
      background: linear-gradient(-45deg, #32CD32, #008000);
      background-size: 300%;
-     font-family: var(--ff-body);
+     font-family: var(--ff-ggle);
      font-weight: 1200;
      font-size: 3.5rem;
      text-transform: uppercase;
@@ -183,13 +184,13 @@ video {
  .left p {
      font-weight: normal;
      font-size: .85rem;
-     font-family: var(--ff-space);
+     font-family: var(--ff-ggle);
      text-align: center;
 }
  .right p {
      font-weight: normal;
      font-size: .85rem;
-     font-family: var(--ff-space);
+     font-family: var(--ff-ggle);
      text-align: center;
 }
  .top-box .right {
@@ -230,7 +231,7 @@ video {
  .card p {
      font-weight: normal;
      font-size: .65rem;
-     font-family: var(--ff-space);
+     font-family: var(--ff-ggle);
      text-align: center;
 }
  .team_Icon {
