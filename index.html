@@ -1,204 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Viking Hacks 2023</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css\main.css" />
-    <link rel="icon" type="image/x-icon" href="imgs\VikingHacksLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="imgs\VikingHacksLogo.png" />
     <script src="js\clock.js"></script>
     <script src="js\gallery.js"></script>
     <script src="js\faq.js"></script>
-</head>
+  </head>
 
-<body>
-    
+  <body>
     <header class="navStick">
-        <nav>
-            <a class="active" href="#home">Home</a>
-            <a href="#sponsors">Sponsors</a>
-            <a href="#faq">FAQ</a>
-            <a href="https://dvc.campuslabs.com/engage/event/8986420">Register</a>
-        </nav>
+      <nav>
+        <a class="active" href="#home">Home</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://dvc.campuslabs.com/engage/event/8986420">Register</a>
+      </nav>
     </header>
     <section id="home"></section>
-     <div class="hero">
-        <div class="hero-c">
-        </div>
-        <div class="hero-c">
-            <img class="logo" src="imgs/VikingHacksLogo.png">
-                <p class="text">Viking Hacks</p>
-                <p class="text">2023</p>
-        </div>
-        
-    </div>
+    <div id="splash_banner">
+      <div class="leaf_particles" aria-hidden="true">
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+        <img src="imgs/leaf.png" class="leaf_particle" />
+      </div>
+      <style>
+        .leaf_particles {
+          top: -3rem;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+        .leaf_particle {
+          color: #fff;
+          font-size: 2em;
+          font-family: Arial;
+          text-shadow: 0 0 1px #000;
+          pointer-events: none;
+        }
+        .leaf_particles > img {
+          height: 3rem;
+        }
+        .leaf_particle:nth-child(3n) {
+          height: 2rem;
+        }
+        .leaf_particle:nth-child(2n) {
+          filter: hue-rotate(-40deg);
+        }
+        .leaf_particle:nth-child(3n) {
+          filter: hue-rotate(40deg);
+        }
+        @-webkit-keyframes leaves_particles-fall {
+          0% {
+            top: -10%;
+          }
+          100% {
+            top: 100%;
+          }
+        }
+        @-webkit-keyframes leaves_particles-shake {
+          0% {
+            -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+          }
+          50% {
+            -webkit-transform: translateX(80px) rotate(-30deg);
+            transform: translateX(80px) rotate(-30deg);
+          }
+          100% {
+            -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+          }
+        }
+        @keyframes leaves_particles-fall {
+          0% {
+            top: -10%;
+          }
+          100% {
+            top: 100%;
+          }
+        }
 
-    <div class="countdown_container">
-        <p id="demo"></p>
+        @keyframes leaves_particles-clear {
+          0% {
+            opacity: 0%;
+          }
+          25% {
+            opacity: 100%;
+          }
+          90% {
+            opacity: 100%;
+          }
+          100% {
+            opacity: 0%;
+          }
+        }
+        @keyframes leaves_particles-shake {
+          0% {
+            transform: translateX(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateX(80px) rotate(-30deg);
+          }
+          100% {
+            transform: translateX(0px) rotate(0deg);
+          }
+        }
+        .leaf_particle {
+          position: absolute;
+          top: -10%;
+          z-index: 9999;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          cursor: default;
+          -webkit-animation-name: leaves_particles-fall, leaves_particles-shake,
+            leaves_particles-rot, leaves_particles-clear;
+          -webkit-animation-duration: 10s, 3s;
+          -webkit-animation-timing-function: linear, ease-in-out;
+          -webkit-animation-iteration-count: infinite, infinite;
+          -webkit-animation-play-state: running, running;
+          animation-name: leaves_particles-fall, leaves_particles-shake,
+            leaves_particles-clear, leaves_particles-rot;
+          animation-duration: 10s, 3s;
+          animation-timing-function: linear, ease-in-out;
+          animation-iteration-count: infinite, infinite;
+          animation-play-state: running, running;
+        }
+        .leaf_particle:nth-of-type(0) {
+          left: 1%;
+          -webkit-animation-delay: 0s, 0s;
+          animation-delay: 0s, 0s;
+        }
+        .leaf_particle:nth-of-type(1) {
+          left: 10%;
+          -webkit-animation-delay: 1s, 1s;
+          animation-delay: 1s, 1s;
+        }
+        .leaf_particle:nth-of-type(2) {
+          left: 20%;
+          -webkit-animation-delay: 6s, 0.5s;
+          animation-delay: 6s, 0.5s;
+        }
+        .leaf_particle:nth-of-type(3) {
+          left: 30%;
+          -webkit-animation-delay: 4s, 2s;
+          animation-delay: 4s, 2s;
+        }
+        .leaf_particle:nth-of-type(4) {
+          left: 40%;
+          -webkit-animation-delay: 2s, 2s;
+          animation-delay: 2s, 2s;
+        }
+        .leaf_particle:nth-of-type(5) {
+          left: 50%;
+          -webkit-animation-delay: 8s, 3s;
+          animation-delay: 8s, 3s;
+        }
+        .leaf_particle:nth-of-type(6) {
+          left: 60%;
+          -webkit-animation-delay: 6s, 2s;
+          animation-delay: 6s, 2s;
+        }
+        .leaf_particle:nth-of-type(7) {
+          left: 70%;
+          -webkit-animation-delay: 2.5s, 1s;
+          animation-delay: 2.5s, 1s;
+        }
+        .leaf_particle:nth-of-type(8) {
+          left: 80%;
+          -webkit-animation-delay: 1s, 0s;
+          animation-delay: 1s, 0s;
+        }
+        .leaf_particle:nth-of-type(9) {
+          left: 90%;
+          -webkit-animation-delay: 3s, 1.5s;
+          animation-delay: 3s, 1.5s;
+        }
+
+        #splash_banner {
+          width: 100vw;
+          height: 30rem;
+          background: rgb(111, 149, 252);
+          background: linear-gradient(
+            0deg,
+            rgba(111, 149, 252, 1) 0%,
+            rgba(121, 255, 202, 1) 100%
+          );
+          padding-top: 4rem;
+        }
+        #viking_left {
+          position: absolute;
+          height: 30rem;
+          left: -6rem;
+          filter: blur(0px);
+          transition: filter 800ms ease;
+        }
+        #viking_right {
+          position: absolute;
+          height: 30rem;
+          right: -6rem;
+          animation-delay: 500ms;
+          opacity: 100%;
+          transition: opacity 800ms ease;
+        }
+        .floating {
+          animation-name: floating;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          margin-left: 30px;
+          margin-top: 5px;
+        }
+
+        @keyframes floating {
+          0% {
+            transform: translate(0, 0px);
+          }
+          50% {
+            transform: translate(0, 15px);
+          }
+          100% {
+            transform: translate(0, -0px);
+          }
+        }
+        @media (max-width: 1000px) {
+          #viking_right {
+            opacity: 0%;
+          }
+          #viking_left {
+            filter: blur(9px);
+          }
+        }
+      </style>
+      <script>
+        const viking_left = document.getElementById("viking_left");
+      </script>
+      <div>
+        <img
+          class="floating"
+          id="viking_left"
+          alt="viking_sitting_on_tree"
+          src="imgs/viking_left.png"
+        />
+        <img
+          class="floating"
+          id="viking_right"
+          alt="viking_sitting_on_tree"
+          src="imgs/viking_right.png"
+        />
+      </div>
+      <div class="splash_info">
+        <div class="hero">
+          <div class="hero-c"></div>
+          <div class="hero-c">
+            <img class="logo" src="imgs/VikingHacksLogo.png" />
+            <p class="text">Viking Hacks</p>
+            <p class="text">2023</p>
+          </div>
+        </div>
+        <div class="countdown_container">
+          <p id="demo"></p>
+        </div>
+      </div>
     </div>
+    <!--
+    <div class="hero">
+      <div class="hero-c"></div>
+      <div class="hero-c">
+        <img class="logo" src="imgs/VikingHacksLogo.png" />
+        <p class="text">Viking Hacks</p>
+        <p class="text">2023</p>
+      </div>
+    </div>
+      -->
 
     <div class="about">
-        <p>VikingHacks is a 2 day in-person hackathon event hosted by Google Developers Student Club at <a class="college_Map" href="https://goo.gl/maps/on85PRUbqoPUyFhTA"> Diablo Valley College</a> in Pleasant Hill, CA <b>April 28th - 29th</b>.</p>
-        <p>It is a great opportunity for students to learn new skills, build projects, and network with other students. </p>
-        <p>This year, we are hosting our 2nd annual hackathon. We are excited to see what you will create! </p>
-        
+      <p>
+        VikingHacks is a 2 day in-person hackathon event hosted by Google
+        Developers Student Club at
+        <a class="college_Map" href="https://goo.gl/maps/on85PRUbqoPUyFhTA">
+          Diablo Valley College</a
+        >
+        in Pleasant Hill, CA <b>April 28th - 29th</b>.
+      </p>
+      <p>
+        It is a great opportunity for students to learn new skills, build
+        projects, and network with other students.
+      </p>
+      <p>
+        This year, we are hosting our 2nd annual hackathon. We are excited to
+        see what you will create!
+      </p>
     </div>
-<h2 id="promovid">Viking Hacks 2023 Theme: Sustainability</h2>
+    <h2 id="promovid">Viking Hacks 2023 Theme: Sustainability</h2>
     <div class="video">
-        
-        <video controls>
-            <source src="vids/VikingHacks.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>    
+      <video controls>
+        <source src="vids/VikingHacks.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <div class="textPics">
-        <div class="top-box">
-            <div class="left">
-                <h2>What is Viking Hacks</h2>
-                <p> Viking Hacks is Diablo Valley College's premier hackathon that is organized by the Google Developers Student Club. 
-                    Whether you are a seasoned veteran or just getting started, we invite
-                    you to join us for a weekend of learning, networking, and creating.
-                </p>
-            </div>
-            <div class="right">
-                <img class="profpic" src="imgs\VH_Prof1.png">
-            </div>
+      <div class="top-box">
+        <div class="left">
+          <h2>What is Viking Hacks</h2>
+          <p>
+            Viking Hacks is Diablo Valley College's premier hackathon that is
+            organized by the Google Developers Student Club. Whether you are a
+            seasoned veteran or just getting started, we invite you to join us
+            for a weekend of learning, networking, and creating.
+          </p>
         </div>
-        <div class="top-box">
-            <div class="left">
-                <img class="groupPic" src="imgs\VH_2022.JPG">
-            </div>
-            <div class="right">
-                <h2>What will you create?</h2>
-                <p>This year we are focusing on the theme of sustainability. If you ever had an idea that you wanted to bring to life, Viking Hacks
-                    is the place to do it. We will have mentors and workshops to help you get started. We will also have a variety of prizes for the best projects.
-                </p>
-            </div>
+        <div class="right">
+          <img class="profpic" src="imgs\VH_Prof1.png" />
         </div>
+      </div>
+      <div class="top-box">
+        <div class="left">
+          <img class="groupPic" src="imgs\VH_2022.JPG" />
+        </div>
+        <div class="right">
+          <h2>What will you create?</h2>
+          <p>
+            This year we are focusing on the theme of sustainability. If you
+            ever had an idea that you wanted to bring to life, Viking Hacks is
+            the place to do it. We will have mentors and workshops to help you
+            get started. We will also have a variety of prizes for the best
+            projects.
+          </p>
+        </div>
+      </div>
     </div>
     <section id="sponsors"></section>
 
-
     <p class="text-s">Sponsors</p>
     <section class="gallery_S">
-    <figure class="frame">
-        <img class="slide current" src="imgs\ASDVC.png" alt="Associated Students of Diablo Valley College">
-        <img class="slide" src="imgs\GDSC.png" alt="Google Student Developers Clubs">
-        <img class="slide" src="imgs\echo3d.png" alt="Echo3d">
-        <img class="slide" src="imgs\balsamiq.png" alt="Balsamiq">
-        <img class="slide" src="imgs\axure.png" alt="Axure">
-        <img class="slide" src="imgs\Taskade.png" alt="Taskade">
-        <img class="slide" src="imgs\ICC.png" alt="ICC">
-        <img class="slide" src="imgs\GFG.png" alt="Geeks For Geeks">
-        <img class="slide" src="imgs\xyz-logo-color.png" alt="XYZ domains">
-        <img class="slide" src="imgs\thecoderschool.png" alt="The Coder School">
+      <figure class="frame">
+        <img
+          class="slide current"
+          src="imgs\ASDVC.png"
+          alt="Associated Students of Diablo Valley College"
+        />
+        <img
+          class="slide"
+          src="imgs\GDSC.png"
+          alt="Google Student Developers Clubs"
+        />
+        <img class="slide" src="imgs\echo3d.png" alt="Echo3d" />
+        <img class="slide" src="imgs\balsamiq.png" alt="Balsamiq" />
+        <img class="slide" src="imgs\axure.png" alt="Axure" />
+        <img class="slide" src="imgs\Taskade.png" alt="Taskade" />
+        <img class="slide" src="imgs\ICC.png" alt="ICC" />
+        <img class="slide" src="imgs\GFG.png" alt="Geeks For Geeks" />
+        <img class="slide" src="imgs\xyz-logo-color.png" alt="XYZ domains" />
+        <img
+          class="slide"
+          src="imgs\thecoderschool.png"
+          alt="The Coder School"
+        />
         <figcaption>Many thanks to our incredible sponsors!</figcaption>
-    </figure>
+      </figure>
     </section>
     <div class="org_Heading">
-        <h1> Viking Hacks Organizers </h1>
+      <h1>Viking Hacks Organizers</h1>
     </div>
 
     <div class="container">
-        <div class="card">
-            <p>Christina Mullen</p>
-            <img class="team_Icon" src="imgs\team_Christina.png">
-            <p>Event Lead</p>
-        </div>
-        <div class="card">
-            <p>Afraz Ahmed</p>
-            <img class="team_Icon" src="imgs\team_Afraz.png">
-            <p>GDSC Lead</p>
-        </div>
-        <div class="card">
-            <p>Johnathan Saleh</p>
-            <img class="team_Icon" src="imgs\team_Jonathan.png">
-            <p>President</p>
-        </div>
-        <div class="card">
-            <p>Jay Chong</p>
-            <img class="team_Icon" src="imgs\team_Jay.png">
-            <p>Lead Developer</p>
-        </div>
-        <div class="card">
-            <p>Thomas Yeoh</p>
-            <img class="team_Icon" src="imgs\team_Thomas.png">
-            <p>Sponsorship Lead</p>
-        </div>
-        <div class="card">
-            <p>Kojiro Tsugaru</p>
-            <img class="team_Icon" src="imgs/team_Kojiro.png">
-            <p>Creative Designer</p>
-        </div>
-        <div class="card">
-            <p>Richard Azucenas</p>
-            <img class="team_Icon" src="imgs\team_Richard.png">
-            <p>Creative Designer</p>
-        </div>
-        <div class="card">
-            <p>Konstantin Victoria</p>
-            <img class="team_Icon" src="imgs\team_Konstantin.png">
-            <p>Advisor</p>
-        </div>
-        <div class="card">
-            <p>Ruaa Abushareefh</p>
-            <img class="team_Icon" src="imgs/team_Ruaa.png">
-            <p>Event Coordinator</p>
-        </div>
-        <div class="card">
-            <p>Rohan Chhaya </p>
-            <img class="team_Icon" src="imgs/team_Rohan.jpg">
-            <p>Event Coordinator</p>
-        </div>
-        <div class="card">
-            <p>Lucero Hernandez</p>
-            <img class="team_Icon" src="imgs\team_lucero.png">
-            <p>Event Coordinator</p>
-        </div>
-        <div class="card">
-            <p>Bryan Valerianlie</p>
-            <img class="team_Icon" src="imgs\team_Bryan.png">
-            <p>Event Coordinator</p>
-        </div>
+      <div class="card">
+        <p>Christina Mullen</p>
+        <img class="team_Icon" src="imgs\team_Christina.png" />
+        <p>Event Lead</p>
+      </div>
+      <div class="card">
+        <p>Afraz Ahmed</p>
+        <img class="team_Icon" src="imgs\team_Afraz.png" />
+        <p>GDSC Lead</p>
+      </div>
+      <div class="card">
+        <p>Johnathan Saleh</p>
+        <img class="team_Icon" src="imgs\team_Jonathan.png" />
+        <p>President</p>
+      </div>
+      <div class="card">
+        <p>Jay Chong</p>
+        <img class="team_Icon" src="imgs\team_Jay.png" />
+        <p>Lead Developer</p>
+      </div>
+      <div class="card">
+        <p>Thomas Yeoh</p>
+        <img class="team_Icon" src="imgs\team_Thomas.png" />
+        <p>Sponsorship Lead</p>
+      </div>
+      <div class="card">
+        <p>Kojiro Tsugaru</p>
+        <img class="team_Icon" src="imgs/team_Kojiro.png" />
+        <p>Creative Designer</p>
+      </div>
+      <div class="card">
+        <p>Richard Azucenas</p>
+        <img class="team_Icon" src="imgs\team_Richard.png" />
+        <p>Creative Designer</p>
+      </div>
+      <div class="card">
+        <p>Konstantin Victoria</p>
+        <img class="team_Icon" src="imgs\team_Konstantin.png" />
+        <p>Advisor</p>
+      </div>
+      <div class="card">
+        <p>Ruaa Abushareefh</p>
+        <img class="team_Icon" src="imgs/team_Ruaa.png" />
+        <p>Event Coordinator</p>
+      </div>
+      <div class="card">
+        <p>Rohan Chhaya</p>
+        <img class="team_Icon" src="imgs/team_Rohan.jpg" />
+        <p>Event Coordinator</p>
+      </div>
+      <div class="card">
+        <p>Lucero Hernandez</p>
+        <img class="team_Icon" src="imgs\team_lucero.png" />
+        <p>Event Coordinator</p>
+      </div>
+      <div class="card">
+        <p>Bryan Valerianlie</p>
+        <img class="team_Icon" src="imgs\team_Bryan.png" />
+        <p>Event Coordinator</p>
+      </div>
     </div>
     <section id="faq"></section>
     <button class="faq">What is a hackathon?</button>
     <div class="answer">
-      <p>A hackathon is a social coding event in which teams of developers create projects in a limited amount of time to solve a problem, and compete for prizes!</p>
+      <p>
+        A hackathon is a social coding event in which teams of developers create
+        projects in a limited amount of time to solve a problem, and compete for
+        prizes!
+      </p>
     </div>
-    
+
     <button class="faq">Who can participate?</button>
     <div class="answer">
-      <p>We welcome all DVC students interested in design, programming and problem-solving. No prior coding experience is required to participate! </p>
+      <p>
+        We welcome all DVC students interested in design, programming and
+        problem-solving. No prior coding experience is required to participate!
+      </p>
     </div>
-    
+
     <button class="faq">Where is this hackathon being held?</button>
     <div class="answer">
       <p>Diablo Valley College Cafeteria - 321 Golf Club Rd, Pleasant Hill</p>
     </div>
     <button class="faq">How do I register?</button>
     <div class="answer">
-      <p>Visit the “Register” page on our website to RSVP for the event. You MUST RSVP in order to participate in this hackathon.</p>
+      <p>
+        Visit the “Register” page on our website to RSVP for the event. You MUST
+        RSVP in order to participate in this hackathon.
+      </p>
     </div>
     <button class="faq">May I form teams beforehand?</button>
     <div class="answer">
       <p>Finding teams before the hackathon is allowed and highly encouraged</p>
-    </div>  
+    </div>
     <button class="faq">What if I don’t have a team?</button>
     <div class="answer">
-      <p>Don’t fret! We will have team-building time during the hackathon during which you can find like-minded students to build a project with.</p>
-    </div>  
-  <div class="socials">
-         <a href="https://github.com/Kizum1/vikinghacks-pack" class="fa fa-github"></a>
-         <a href="https://discord.gg/nxKfjYKFby" class="fa fa-discord">D</a>
-         <a href="https://www.instagram.com/dvcdevelopers/" class="fa fa-instagram"></a>
-        <a href="https://www.linkedin.com/company/viking-hacks/about/" class="fa fa-linkedin"></a>
-  </div>
+      <p>
+        Don’t fret! We will have team-building time during the hackathon during
+        which you can find like-minded students to build a project with.
+      </p>
+    </div>
+    <div class="socials">
+      <a
+        href="https://github.com/Kizum1/vikinghacks-pack"
+        class="fa fa-github"
+      ></a>
+      <a href="https://discord.gg/nxKfjYKFby" class="fa fa-discord">D</a>
+      <a
+        href="https://www.instagram.com/dvcdevelopers/"
+        class="fa fa-instagram"
+      ></a>
+      <a
+        href="https://www.linkedin.com/company/viking-hacks/about/"
+        class="fa fa-linkedin"
+      ></a>
+    </div>
 
-
-<footer>  Developed by Viking Hacks Web Dev Team &copy; 2023 </footer>
-</body>
-
+    <footer>Developed by Viking Hacks Web Dev Team &copy; 2023</footer>
+  </body>
 </html>
