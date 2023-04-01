@@ -91,9 +91,11 @@ h2 {
      color: var(--color-secondary);
      text-decoration: none;
      transition: color 0.25s;
+     font-size: small;
+     font-family: var(--ff-ggle);
 }
  .navStick a:hover {
-     color: var(--color-drkGreen);
+     color: var(--color-green);
 }
 /***************************** Hero: Viking Hacks 2023! **************************/
  .hero {
