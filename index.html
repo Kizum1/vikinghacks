@@ -16,6 +16,7 @@
     <script src="js\gallery.js"></script>
     <script src="js\faq.js" defer></script>
     <script src="js\splash.js"></script>
+    <script src="js\card_gen.js" defer></script>
   </head>
 
   <body>
@@ -70,7 +71,8 @@
             <p class="text">2023</p>
           </div>
         </div>
-        <div class="countdown_container">
+        <div class="countdown_container" style="color: white">
+          Starts in:
           <p id="demo"></p>
         </div>
       </div>
@@ -87,30 +89,35 @@
       -->
 
     <div class="about">
-      <p>
-        VikingHacks is a 2 day in-person hackathon event hosted by Google
-        Developers Student Club at
-        <a class="college_Map" href="https://goo.gl/maps/on85PRUbqoPUyFhTA">
-          Diablo Valley College</a
-        >
-        in Pleasant Hill, CA <b>April 28th - 29th</b>.
-      </p>
-      <p>
-        It is a great opportunity for students to learn new skills, build
-        projects, and network with other students.
-      </p>
-      <p>
-        This year, we are hosting our 2nd annual hackathon. We are excited to
-        see what you will create!
-      </p>
+      <div class="about-info">
+        <h2 id="promovid" class="section-header">Our Theme: Sustainability.</h2>
+        <p>
+          VikingHacks is a 2 day in-person hackathon event hosted by Google
+          Developers Student Club at
+          <a class="college_Map" href="https://goo.gl/maps/on85PRUbqoPUyFhTA">
+            Diablo Valley College</a
+          >
+          in Pleasant Hill, CA <b>April 28th - 29th</b>. It is a great
+          opportunity for students to learn new skills, build projects, and
+          network with other students. This year, we are hosting our 2nd annual
+          hackathon. We are excited to see what you will create!
+        </p>
+      </div>
+      <div class="video">
+        <video controls>
+          <source src="vids/VikingHacks.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
-    <h2 id="promovid">Viking Hacks 2023 Theme: Sustainability</h2>
-    <div class="video">
-      <video controls>
-        <source src="vids/VikingHacks.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
+
+    <section id="quick-cards">
+      <div class="info-card" style="display: none">
+        <h2></h2>
+        <img />
+        <p></p>
+      </div>
+    </section>
 
     <div class="textPics">
       <div class="top-box">
