@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', init);
 var myInterval = setInterval(changeSlide, 2000);
 
 function init() {
-  const back_btn = document.querySelector(".back-btn");
-  const next_btn = document.querySelector(".next-btn");
   const frame = document.querySelector(".frame");
   const slides = frame.querySelectorAll("img");
   const caption = frame.querySelector('figcaption');
@@ -15,9 +13,6 @@ function init() {
   
   // show the first slide
   slides[0].classList.remove("hide");
-  
-  //  next_btn.addEventListener("click",changeSlide);
-  //  back_btn.addEventListener("click", changeSlide);
 
    caption.innerHTML = slides[0].alt;
 }

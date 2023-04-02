@@ -42,6 +42,7 @@ body {
   overflow: auto;
   flex-direction: column;
   display: flex;
+  width: 100vw !important;
 }
 div {
   display: flex;
@@ -318,32 +319,60 @@ figure {
 }
 
 /************************************************ FAQ CSS ******************************************************/
-.faq {
-  background-color: #eee;
+
+.faq-heading {
+  border-bottom: #777;
+  padding-top: 200px;
+}
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hr-line {
+  width: 60%;
+  margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
   color: #444;
   cursor: pointer;
-  padding: 18px;
-  width: 50%;
+  padding: 30px 20px;
+  width: 60%;
   border: none;
-  text-align: center;
   outline: none;
-  font-size: 15px;
   transition: 0.4s;
+  margin: auto;
 }
-.faq:after {
-  content: "\002B";
+.faq-body {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  padding: auto;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+  background-color: #f9f9f9;
+}
+/* Style the faq-page panel.*/
+.faq-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.faq-page:after {
+  content: "\02795";
+  font-size: 13px;
   color: #777;
-  font-weight: bold;
   float: right;
   margin-left: 5px;
 }
-.answer {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.active:after {
+  content: "\2796";
 }
+
 /***************************** Socials and Links **************************/
 .socials {
   display: grid;
@@ -686,6 +715,7 @@ body::-webkit-scrollbar-thumb {
     }
     .navStick {
       width: 100vw;
+      padding-left: 0% !important;
     }
     .navStick nav {
       padding: 0.6rem;
