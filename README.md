@@ -6,7 +6,7 @@ This is the official website of the Viking Hacks 2023 Event at Diablo Valley Col
 
 ## Authors
 
-- Lead Developer [@Jay Chong](https://www.github.com/octokatherine)
+- Lead Developer [@Jay Chong](https://github.com/Kizum1)
 - Co-Developer [@Christina Mullen](https://github.com/christinamullen)
 - Co-Developer [@Konstantin Victoria](https://github.com/KonstantinVVictoria)
 - Co-Developer [@Lucero Hernandez](https://github.com/Lucero0214)
