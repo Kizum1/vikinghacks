@@ -39,7 +39,7 @@ const cards = [
       alt: "student",
     },
     description: {
-      text: "Diablo Valley College students only! You don't need ANY computer science background.",
+      text: "All majors encouraged, not just Computer Science! Attendance is limited to DVC students 18+.",
       url: "",
     },
   },
@@ -50,7 +50,7 @@ const cards = [
       alt: "workshop",
     },
     description: {
-      text: "You can have up to 4 teams. You cannot work with other teams.",
+      text: "Teams can have up to 4 individuals per group. You may only work with one team.",
       url: "",
     },
   },
