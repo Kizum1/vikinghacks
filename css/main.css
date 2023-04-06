@@ -950,7 +950,6 @@ body::-webkit-scrollbar-thumb {
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 16px;
@@ -959,21 +958,9 @@ body::-webkit-scrollbar-thumb {
   padding: 12px 14px;
   text-align: center;
   margin-top: 30px;
-  text-rendering: geometricprecision;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
 }
 
 .CTA:hover,
 .CTA:active {
-  background-color: initial;
-  background-position: 0 0;
-  color: #FF4742;
-}
-
-.CTA:active {
-  opacity: .5;
+  color: #6f0dc5;
 }
